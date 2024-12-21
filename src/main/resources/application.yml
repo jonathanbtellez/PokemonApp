@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: PokemonApp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pokemon_app
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      jdbc:
+        lob:
+          non-contextual-creation: true
+pokemon:
+  api:
+    url: https://pokeapi.co/api/v2
+
+server:
+  port: 18081
+
